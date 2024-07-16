@@ -1,0 +1,90 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/*  -> we always use em for media queries*/
+
+/* ********************************  */
+/* For Small Laptops(Below 1366px) ->  1366px/16px = 85.375em */
+/* ******************************** */
+@media (max-width: 85.375em) {
+}
+
+/* ********************************  */
+/* For Landscape Tablets(Below 1200px) ->  1200px/16px = 75em */
+/* ******************************** */
+
+@media (max-width: 75em) {
+  /* 9px/16px =  0.5625*/
+  /* font-size Adjustment */
+  html {
+    font-size: 56.25%;
+  }
+  body {
+    background-position: left 145%;
+    background-size: 100%;
+  }
+}
+
+/* ********************************  */
+/* For Tablet(Below 960px) ->  960px/16px = 60em */
+/* ******************************** */
+@media (max-width: 60em) {
+  /* 8px/16px =  0.5*/
+  /* font-size Adjustment */
+  html {
+    font-size: 50%;
+  }
+  body {
+    background-position: left 100%;
+    background-size: 100%;
+  }
+}
+
+/* ********************************  */
+/* For Small-Tablets(Below 760px) ->  760px/16px = 47.5em */
+/* ******************************** */
+@media (max-width: 47.5em) {
+  /* 7px/16px =  0.4375*/
+  html {
+    font-size: 43.75%;
+  }
+}
+
+/* ********************************  */
+/* For Phones(Below 670px) ->  670px/16px = 41.875em */
+/* ******************************** */
+@media (max-width: 41.875em) {
+  /* 6px/16px =  37.5*/
+
+  body {
+    background: url(./images/bg-mobile.png);
+    background-size: cover;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .left-card {
+    height: 17rem;
+    width: 45rem;
+  }
+  .images {
+    gap: 2rem;
+  }
+  .image {
+    padding: 2.6rem;
+  }
+  .right-card {
+    width: 45rem;
+  }
+  .used-gb-box {
+    position: absolute;
+    top: 15.5rem;
+    right: 12rem;
+  }
+  .used-gb::after {
+    display: none;
+  }
+}

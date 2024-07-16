@@ -1,0 +1,166 @@
+/* ## Colors
+
+### Primary
+
+- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+### Neutral
+
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 14px
+
+### Font
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700 */
+:root {
+  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 14px;
+  font-family: "Raleway", sanserif;
+  background: url(./images/bg-desktop.png), var(--Very-Dark-Blue);
+  background-repeat: no-repeat;
+  background-position: left 145%;
+  background-size: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+.card {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+.left-card {
+  padding: 3rem;
+  width: 25rem;
+  height: 15rem;
+  border-radius: 5px;
+  border-top-right-radius: 6.5rem;
+  background: var(--Dark-Blue);
+}
+.logo {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+.images {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.image {
+  background: var(--Very-Dark-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.8rem;
+  height: 4rem;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+.right-card {
+  width: 60rem;
+  background: var(--Dark-Blue);
+  padding: 4rem;
+  position: relative;
+  border-radius: 5px;
+}
+.statement {
+  color: var(--Grayish-Blue);
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+.used-gb {
+  color: var(--Pale-Blue);
+  font-weight: 700;
+}
+.used-gb-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: white;
+  width: 20rem;
+  height: 7rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  border-radius: 9px;
+  position: absolute;
+  top: -5rem;
+  right: 4rem;
+}
+.used-gb::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 3rem solid white;
+  border-left: 3rem solid transparent;
+  position: absolute;
+  top: 1.2rem;
+  right: 4rem;
+}
+.right-statement {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--Grayish-Blue);
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+.father {
+  padding: 0.3rem;
+  border-radius: 5rem;
+  background: var(--Very-Dark-Blue);
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.4rem;
+}
+.visualizer {
+  padding: 0.3rem 0.4rem 0.4rem 0.3rem;
+  background: linear-gradient(to left, hsl(335, 100%, 65%), hsl(6, 100%, 80%));
+  width: 75%;
+  border-radius: 3rem;
+}
+.son {
+  margin-left: auto;
+  background-color: white;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 100%;
+}
+.limits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.limit {
+  color: var(--Pale-Blue);
+  font-weight: 700;
+}
